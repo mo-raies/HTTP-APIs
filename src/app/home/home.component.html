@@ -1,0 +1,16 @@
+
+<h3> Angular HTTP|DEMO</h3>
+<div class="users" >
+  <div class="user" *ngFor="let user of users">
+    <div class="user-img">
+      <img [src]="user.avatar_url" alt="img not found">
+    </div>
+    <div class="user-name">{{user.login}}</div>
+    <p></p>
+    <div>
+      <button (click)="goTogithub(user.html_url)" class="btn btn-danger">Profile
+      </button>
+    </div>
+  </div>
+</div>
+

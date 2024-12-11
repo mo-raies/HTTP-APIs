@@ -1,0 +1,105 @@
+/* General Styles */
+.users {
+  display: flex;
+  /* Arrange user cards in a row */
+  /* Center user cards */
+  gap: 20px;
+  /* Add spacing between user cards */
+  margin-top: 20px;
+  /* Add some space below the header */
+  margin-left: 60px;
+  flex-wrap: wrap;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* Individual User Card */
+.user {
+  text-align: center;
+  /* Center-align text inside the card */
+  border: 1px solid #ccc;
+  /* Add a light border */
+  border-radius: 10px;
+  /* Rounded corners for the card */
+  padding: 15px;
+  /* Add padding inside the card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add shadow for a modern look */
+  width: 200px;
+  /* Fixed width for cards */
+  background-color: #fff;
+  /* White background */
+  transition: transform 0.2s ease-in-out;
+  /* Smooth hover effect */
+
+}
+
+/* Hover Effect */
+.user:hover {
+  transform: scale(1.05);
+}
+
+/* User Image */
+.user-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  /* Center the image and add margin below */
+  overflow: hidden;
+  /* Crop overflowing image parts */
+  border-radius: 50%;
+  /* Circular image */
+  border: 2px solid #ccc;
+  /* Add border around the image */
+  display: flex;
+
+
+}
+
+.user-img img {
+  width: 100%;
+  /* Make image fill the container */
+  height: 100%;
+  /* Keep aspect ratio within the container */
+  object-fit: cover;
+  /* Cover the container without distortion */
+}
+
+/* User Name */
+.user-name {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+  /* Space around the name */
+  color: #333;
+  /* Dark text color */
+}
+
+/* Button */
+.btn {
+  padding: 8px 12px;
+  /* Padding inside the button */
+  font-size: 0.9em;
+  color: #fff;
+  /* White text */
+  /* background-color: #007bff; */
+  
+  border: none;
+  /* Remove default border */
+  border-radius: 5px;
+  /* Rounded button corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s;
+  /* Smooth color change */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
